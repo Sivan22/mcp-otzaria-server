@@ -1,5 +1,6 @@
 # Jewish Library MCP Server
 
+[![smithery badge](https://smithery.ai/badge/jewish_library)](https://smithery.ai/server/jewish_library)
 An MCP (Model Context Protocol) server that provides powerful search capabilities for Jewish texts and literature. This server enables Large Language Models to search and reference Jewish texts through a standardized interface.
 
 ## Features
@@ -18,6 +19,13 @@ An MCP (Model Context Protocol) server that provides powerful search capabilitie
 
 Requires Python 3.10 or higher.
 
+### Installing via Smithery
+
+To install Jewish Library for Claude Desktop automatically via [Smithery](https://smithery.ai/server/jewish_library):
+
+```bash
+npx -y @smithery/cli install jewish_library --client claude
+```
 
 ### Clone the repository
 ```bash
