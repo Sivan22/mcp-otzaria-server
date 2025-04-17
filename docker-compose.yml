@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  jewish-library-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jewish-library-server
+    environment:
+      - PYTHONIOENCODING=utf-8
+    volumes:
+      # Optional: Mount a local log file to persist logs
+      - ./jewish_library.log:/app/jewish_library.log
+    restart: unless-stopped
+    # If you want to expose the server on a specific port (if needed)
+    # ports:
+    #   - "8000:8000"
